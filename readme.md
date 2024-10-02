@@ -2,6 +2,12 @@
 
 Este projeto é um formulário de pré-matrícula para uma escola virtual, desenvolvido com Express.js e HTML/JavaScript para a atividade "Validando Dados No Backend" da matéria de PWEB2, ministrada pelo professor Leo Fernandes, no curso Bacharelado em Sistemas de Informação do Instituto Federal de Alagoas.
 
+## Integrantes
+
+| Nome                                  | Foto                                                                                           | E-mail                          |
+|---------------------------------------|------------------------------------------------------------------------------------------------|---------------------------------|
+| **[Lucas Matheus Vieira Lúcio](https://github.com/Casterrr)**        | <img src="https://avatars.githubusercontent.com/u/44622004?v=4" width="100" alt="Lucas">     | lmvl2@aluno.ifal.edu.br         |
+
 ## Pré-requisitos
 
 Antes de começar, certifique-se de ter o Node.js instalado em sua máquina. Você pode baixá-lo em [nodejs.org](https://nodejs.org/).
@@ -70,3 +76,4 @@ Para fazer alterações, edite esses arquivos conforme necessário e reinicie o 
 
 - Certifique-se de que a porta 3000 não está sendo usada por outro processo.
 - Se precisar mudar a porta, você pode modificar o arquivo `bin/www`.
+
