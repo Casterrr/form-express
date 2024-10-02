@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Escola Virtual - Formulário de Pré-Matrícula</title>
+  <link rel="stylesheet" href="./stylesheets/index.css">
+  <script src="./javascripts/index.js"></script>
+</head>
+<body>
+  <h1>Escola Virtual</h1>
+  <h2>Formulário de Pré-Matrícula</h2>
+  
+  <form id="matriculaForm" class="form-container">
+    <div class="form-sections-container">
+      <div class="form-section-container">
+        <h3>Dados Pessoais:</h3>
+        <div class="personal-data-form-fields">
+          <div class="personal-data-input-labels">
+            <label for="nome_aluno">Nome do Aluno:</label>
+            <label for="data_nascimento">Data de Nascimento:</label>
+            <label for="nome_mae">Nome da Mãe:</label>
+            <label for="nome_pai">Nome do Pai:</label>
+            <label for="telefone_ddd">Telefone:</label>
+            <label for="email">E-mail:</label>
+          </div>
+          
+          <div class="personal-data-input-fields">
+            <input type="text" id="nome_aluno" name="nome_aluno">
+            <input type="date" id="data_nascimento" name="data_nascimento">
+            <input type="text" id="nome_mae" name="nome_mae">
+            <input type="text" id="nome_pai" name="nome_pai">
+            <div class="telefone-input-fields">
+              <label for="telefone_ddd">(DDD)</label><input style="width: 30px;" type="number" id="telefone_ddd" name="telefone_ddd" maxlength="2">
+              <label for="telefone_prefixo">Tel:</label><input style="width: 50px;" type="number" id="telefone_prefixo" name="telefone_prefixo" maxlength="5">
+              <label for="telefone_ramal">Ramal:</label><input style="width: 50px;" type="number" id="telefone_ramal" name="telefone_ramal" maxlength="4">
+            </div>
+            <input id="email" name="email">
+          </div>
+        </div>
+      </div>
+      
+      <div class="form-section-container">
+        <h3>Informações de Matrícula:</h3>
+        <div class="info-matricula-form-fields">
+          <div>
+            <label for="serie_escolar">Série:</label>
+            <select id="serie_escolar" name="serie_escolar">
+              <option value="">Selecione a série</option>
+              <option value="pre-escolar">Pré-escolar</option>
+              <option value="1ano">1º ano</option>
+              <option value="2ano">2º ano</option>
+              <option value="3ano">3º ano</option>
+              <!-- Adicione mais opções conforme necessário -->
+            </select>
+          </div>
+          
+          <div>
+            <label>Turno:</label>
+            <div>
+              <div class="turno-radio-input-container">
+                <input type="radio" id="turno_manha" name="turno" value="M" />
+                <label for="turno_manha">Manhã</label>
+              </div>
+            
+              <div class="turno-radio-input-container">
+                <input type="radio" id="turno_tarde" name="turno" value="T" />
+                <label for="turno_tarde">Tarde</label>
+              </div>
+            </div>
+          </div>
+          
+          <div>
+            <label>Atividades Extracurriculares:</label>
+            <div>
+              <div class="checkbox-input-container">
+                <input type="checkbox" id="informatica" name="atividades_extracurriculares[]" value="Informática">
+                <label for="informatica">Informática</label>
+              </div>
+              <div class="checkbox-input-container">
+                <input type="checkbox" id="musica" name="atividades_extracurriculares[]" value="Música">
+                <label for="musica">Música</label>
+              </div>
+              <div class="checkbox-input-container">
+                <input type="checkbox" id="balet" name="atividades_extracurriculares[]" value="Balet">
+                <label for="balet">Balet</label>
+              </div>
+              <div class="checkbox-input-container">
+                <input type="checkbox" id="pintura" name="atividades_extracurriculares[]" value="Pintura">
+                <label for="pintura">Pintura</label>
+              </div>
+              <div class="checkbox-input-container">
+                <input type="checkbox" id="judo" name="atividades_extracurriculares[]" value="Judô">
+                <label for="judo">Judô</label>
+              </div>
+              <div class="checkbox-input-container">
+                <input type="checkbox" id="futebol" name="atividades_extracurriculares[]" value="Futebol">
+                <label for="futebol">Futebol</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="buttons">
+      <button type="submit">Enviar Formulário</button>
+      <button type="reset">Limpar Campos</button>
+    </div>
+  </form>
+</body>
+</html>

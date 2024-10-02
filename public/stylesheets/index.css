@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+h1, h2 {
+  text-align: center;
+}
+form {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+select {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.form-sections-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 5px;
+  gap: 10px;
+}
+
+.form-section-container {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.personal-data-form-fields {
+  display: flex;
+  gap: 10px;
+}
+
+.personal-data-input-labels {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 7px;
+}
+
+.personal-data-input-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 300px;
+}
+
+.telefone-input-fields {
+  display: flex;
+  gap: 5px;
+}
+
+.info-matricula-form-fields {
+  display: flex;
+  gap: 50px;
+}
+
+.turno-radio-input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox-input-container {
+  justify-items: center;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+}
+.buttons {
+  margin: 20px auto;
+  text-align: center;
+  display: flex;
+  gap: 10px;
+}
+button {
+  padding: 10px 20px;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
